@@ -7,6 +7,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         BgColorMain: "var(--bg-color-main)",
+        FontColor1: "var(--font-color1)",
       },
     },
   },

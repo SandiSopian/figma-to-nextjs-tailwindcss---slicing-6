@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 const Homepage = () => {
   return (
     <>
-      <div className="bg-BgColorMain flex flex-col items-center justify-center h-screen">
+      <div className="bg-BgColorMain">
         <Navbar />
         <Hero />
       </div>
