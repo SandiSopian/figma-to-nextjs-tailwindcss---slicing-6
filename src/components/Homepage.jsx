@@ -4,12 +4,10 @@ import Navbar from "../components/Navbar";
 
 const Homepage = () => {
   return (
-    <>
-      <div className="bg-BgColorMain">
-        <Navbar />
-        <Hero />
-      </div>
-    </>
+    <div className="bg-BgColorMain">
+      <Navbar />
+      <Hero />
+    </div>
   );
 };
 
