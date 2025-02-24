@@ -11,6 +11,9 @@ export default {
         FontColor1: "var(--font-color1)",
         ButtonColor: "var(--button-color)",
       },
+      scale: {
+        200: "2",
+      },
     },
   },
   plugins: [],
