@@ -1,15 +1,21 @@
 import React from "react";
-import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import HeroSpacing from "../components/HeroSpacing";
 import Catalog from "../components/Catalog";
+import More from "../components/More";
 
 const Homepage = () => {
   return (
-    <div className="bg-BgColorMain">
-      <Navbar />
-      <Hero />
+    <>
+      <div className="bg-BgColorMain">
+        <Navbar />
+        <Hero />
+      </div>
+      <HeroSpacing />
       <Catalog />
-    </div>
+      <More />
+    </>
   );
 };
 

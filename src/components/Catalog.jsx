@@ -12,11 +12,11 @@ const Catalog = () => {
   const product7 = catalogSection[6].product7;
 
   return (
-    <section className="flex flex-col items-center justify-center mx-auto p-6 bg-white">
-      <h1 className="text-4xl font-bold text-center text-teal-600 mb-8">CATALOG</h1>
+    <section className="flex flex-col items-center justify-center p-6 bg-white">
+      <h1 className="text-4xl font-bold text-center text-BgColorSecond mb-8 mt-24">CATALOG</h1>
 
       {/* Desktop View */}
-      <div className="container hidden lg:flex gap-2 container mx-auto justify-center text-white">
+      <div className="container hidden lg:flex gap-2 mx-auto justify-center text-white">
         {/* Colomn 1 */}
         <div className="bg-BgColorMain w-1/4 flex flex-col gap-24 p-6">
           <p className="text-lg font-semibold">{product1.catalogName}</p>

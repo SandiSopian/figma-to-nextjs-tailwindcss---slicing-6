@@ -3,12 +3,12 @@ import { heroSection } from "@/service/database";
 import Image from "next/image";
 
 const Hero = () => {
-  const { heroImg, heroWave } = heroSection;
+  const { heroImg } = heroSection;
 
   return (
-    <section className="bg-BgColorMain">
+    <section className="container mx-auto">
       {/* Hero Upper Section */}
-      <div className="container flex flex-col-reverse md:flex-row items-center mx-auto gap-6 md:gap-6">
+      <div className="flex flex-col-reverse md:flex-row items-center gap-6 md:gap-6 bg-BgColorMain ">
         <div className="text-white lg:w-1/2 px-6 md:px-0 md:py-12 flex flex-col gap-6 sm:gap-10 sm:mx-12">
           <h1 className="text-4xl max-w-sm sm:max-w-lg">AI-Powered Future Innovation. Smart. Holographic. Adaptive.</h1>
 
@@ -25,19 +25,6 @@ const Hero = () => {
 
         <div>
           <Image src={heroImg} alt="hero image" width={500} height={500} className="flex items-center justify-center mx-auto w-30" />
-        </div>
-      </div>
-
-      {/* Hero Bottom Section */}
-      <div className="bg-white mx-auto">
-        <Image src={heroWave} alt="wave" className="overflow-visible mx-auto" />
-
-        <div className="container flex flex-col sm:flex-row gap-6 sm:gap-0 items-center justify-between mx-auto text-BgColorMain">
-          <p className="sm:w-1/2 sm:max-w-sm mx-6 sm:mx-12">
-            Explore smarthome products
-            <span className="sm:block">- Upgrade yout home</span>
-          </p>
-          <p className="text-xl sm:w-1/2 sm:max-w-sm mx-6 sm:mx-12">Shop Now for Exclusive Deals and Enjoy Futuristic Home Innovation.</p>
         </div>
       </div>
     </section>

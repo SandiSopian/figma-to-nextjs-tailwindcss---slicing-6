@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="container flex items-center justify-between mx-auto py-4 px-8 text-FontColor1 bg-BgColorMain">
+    <nav className="container mx-auto flex items-center justify-between py-4 px-8 bg-BgColorMain text-FontColor1">
       <Link href="/">
         <h1 className="text-xl font-bold hover:text-white">Bardiner</h1>
       </Link>
