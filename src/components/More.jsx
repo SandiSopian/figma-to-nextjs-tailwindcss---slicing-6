@@ -45,9 +45,9 @@ const More = () => {
 
       {/* Mobile View - Swiper */}
       <div className="block lg:hidden px-8 max-w-md mx-auto">
-        <Swiper modules={[Pagination]} spaceBetween={16} slidesPerView={1} pagination={{ clickable: true }} className="h-dvh">
+        <Swiper modules={[Pagination]} spaceBetween={16} slidesPerView={1} pagination={{ clickable: true }} className="h-[900px]">
           {products.map((product, index) => (
-            <SwiperSlide key={index} className="h-dvh flex">
+            <SwiperSlide key={index} className="h-full flex">
               <div className="bg-BgColorMain text-white flex flex-col justify-between overflow-hidden gap-4 w-full min-h-[500px] h-full">
                 <div className="flex-grow px-6 py-6">
                   <h2 className="text-xl pb-4">{product.productName}</h2>
