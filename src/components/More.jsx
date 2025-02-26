@@ -47,13 +47,15 @@ const More = () => {
       <div className="block lg:hidden px-8 max-w-md mx-auto">
         <Swiper modules={[Pagination]} spaceBetween={16} slidesPerView={1} pagination={{ clickable: true }} className="h-dvh">
           {products.map((product, index) => (
-            <SwiperSlide key={index} className="h-dvh">
-              <div className="bg-BgColorMain text-white flex flex-col justify-end overflow-hidden gap-4 h-full min-h-[400px]">
-                <div className="flex-grow">
-                  <h2 className="text-xl px-6 pt-8 pb-6">{product.productName}</h2>
-                  <p className="text-sm px-6 pb-6">{product.productDescription}</p>
+            <SwiperSlide key={index} className="h-dvh flex">
+              <div className="bg-BgColorMain text-white flex flex-col justify-between overflow-hidden gap-4 w-full min-h-[500px] h-full">
+                <div className="flex-grow px-6 py-6">
+                  <h2 className="text-xl pb-4">{product.productName}</h2>
+                  <p className="text-sm">{product.productDescription}</p>
                 </div>
-                <Image src={product.productImg} alt={product.productName} className="bg-BgColorSecond w-full object-contain h-full" />
+                <div className="w-full h-1/2">
+                  <Image src={product.productImg} alt={product.productName} className="bg-BgColorSecond w-full h-full object-contain" />
+                </div>
               </div>
             </SwiperSlide>
           ))}
