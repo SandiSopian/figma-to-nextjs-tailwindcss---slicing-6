@@ -47,7 +47,7 @@ const Navbar = () => {
       </button>
 
       <ul
-        className={`absolute left-0 w-full backdrop-sepia-0 bg-white/30 shadow-md md:static md:space-x-4 md:shadow-none md:bg-transparent transition-transform duration-300 ${
+        className={`absolute left-0 w-full backdrop-sepia-0 bg-BgColorMain md:static md:space-x-4 md:shadow-none md:bg-transparent transition-transform duration-300 ${
           menuOpen ? "translate-x-0 top-16" : "-translate-x-full top-16"
         } md:translate-x-0 md:hidden`}
       >

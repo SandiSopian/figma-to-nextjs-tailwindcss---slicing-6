@@ -1,15 +1,23 @@
+"use client";
+
 import React from "react";
 import { moreSection } from "@/service/database";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 
 const More = () => {
   const { product1, product2, product3 } = moreSection;
+  const products = [product1, product2, product3];
 
   return (
-    <section className="container mx-auto">
-      <h1 className="text-5xl font-bold text-center text-FontColor2 mb-8 mt-24">Get to know more closely</h1>
+    <section className="container mx-auto mt-24">
+      <h1 className="text-4xl md:text-5xl max-w-sm md:max-w-full mx-auto font-bold text-center text-FontColor2 mb-8 mt-24">Get to know more closely</h1>
 
-      <div className="flex flex-col lg:flex-row justify-center gap-8 p-8">
+      {/* Desktop View */}
+      <div className="hidden lg:flex flex-col lg:flex-row justify-center mx-auto gap-8 p-8 max-w-sm lg:max-w-full">
         <div className="bg-BgColorMain text-white flex flex-col justify-end overflow-hidden lg:w-1/3 gap-4">
           <div className="flex-grow">
             <h2 className="text-xl px-6 pt-8 pb-6">{product1.productName}</h2>
@@ -18,22 +26,12 @@ const More = () => {
           <Image src={product1.productImg} alt={product1.productName} className="bg-BgColorSecond lg:ml-6 w-full object-cover" />
         </div>
 
-        {/* Card no 2 Desktop Only */}
-        <div className="hidden lg:block bg-BgColorMain text-white flex flex-col overflow-hidden lg:w-1/3 gap-4">
+        <div className="bg-BgColorMain text-white flex flex-col overflow-hidden lg:w-1/3 gap-4">
           <Image src={product2.productImg} alt={product2.productName} className="bg-BgColorSecond w-full object-cover" />
           <div className="flex-grow">
             <h2 className="text-xl px-6 pt-8 pb-10">{product2.productName}</h2>
             <p className="text-sm px-6 px-6 pb-6">{product2.productDescription}</p>
           </div>
-        </div>
-
-        {/* Card no 2 Mobile Only */}
-        <div className="block lg:hidden bg-BgColorMain text-white flex flex-col justify-end overflow-hidden gap-4">
-          <div className="flex-grow">
-            <h2 className="text-xl px-6 pt-8 pb-10">{product2.productName}</h2>
-            <p className="text-sm px-6 px-6 pb-6">{product2.productDescription}</p>
-          </div>
-          <Image src={product2.productImg} alt={product2.productName} className="bg-BgColorSecond w-full object-cover" />
         </div>
 
         <div className="bg-BgColorMain text-white flex flex-col justify-end overflow-hidden lg:w-1/3 gap-4">
@@ -43,6 +41,23 @@ const More = () => {
           </div>
           <Image src={product3.productImg} alt={product3.productName} className="bg-BgColorSecond lg:ml-6 w-full object-cover" />
         </div>
+      </div>
+
+      {/* Mobile View - Swiper */}
+      <div className="block lg:hidden px-8 max-w-md mx-auto">
+        <Swiper modules={[Pagination]} spaceBetween={16} slidesPerView={1} pagination={{ clickable: true }} className="h-dvh">
+          {products.map((product, index) => (
+            <SwiperSlide key={index} className="h-dvh">
+              <div className="bg-BgColorMain text-white flex flex-col justify-end overflow-hidden gap-4 h-full min-h-[400px]">
+                <div className="flex-grow">
+                  <h2 className="text-xl px-6 pt-8 pb-6">{product.productName}</h2>
+                  <p className="text-sm px-6 pb-6">{product.productDescription}</p>
+                </div>
+                <Image src={product.productImg} alt={product.productName} className="bg-BgColorSecond w-full object-contain h-full" />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );
