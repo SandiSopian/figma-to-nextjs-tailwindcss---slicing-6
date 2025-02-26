@@ -20,7 +20,7 @@ const Footer = () => {
   return (
     <div className="container mx-auto text-FontColor2 mt-24">
       <div>
-        <Image src={footerImg} alt="footer" className="mx-auto px-8" />
+        <Image src={footerImg} alt="footer" className="mx-auto" />
       </div>
 
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-evenly mb-24">
