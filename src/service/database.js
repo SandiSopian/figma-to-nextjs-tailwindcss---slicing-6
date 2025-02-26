@@ -7,6 +7,7 @@ import SmartLED from "../assets/Smart-LED.png";
 import SmartLight from "../assets/Smart-Light_wallswitch.png";
 import SmartFeeder from "../assets/Smart-Pet_feeder.png";
 import SmartVacuum from "../assets/Smart-vacuum.png";
+import FooterImg from "../assets/footer-image.jpg";
 
 export const heroSection = {
   heroImg: HeroImg,
@@ -78,3 +79,5 @@ export const moreSection = {
     productImg: SmartFeeder,
   },
 };
+
+export const footerSection = { footerImg: FooterImg, footerEmail: "mailto@", footerIg: "https://www.instagram.com/", footerFb: "https://www.facebook.com/", footerWebsite: "https://www.bardi.co.id/" };

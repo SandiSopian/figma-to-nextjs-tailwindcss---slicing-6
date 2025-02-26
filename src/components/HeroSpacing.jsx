@@ -10,7 +10,7 @@ const Spacing = () => {
       <div className="bg-white">
         <Image src={heroWave} alt="wave" className="mx-auto" />
 
-        <div className="container flex flex-col sm:flex-row gap-6 sm:gap-0 items-center justify-between mx-auto text-BgColorMain">
+        <div className="container flex flex-col sm:flex-row gap-6 sm:gap-0 items-center justify-between mx-auto text-FontColor2">
           <p className="sm:w-1/2 sm:max-w-sm mx-6 sm:mx-12">
             Explore smarthome products
             <span className="sm:block">- Upgrade yout home</span>

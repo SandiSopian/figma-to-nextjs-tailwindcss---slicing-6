@@ -10,6 +10,7 @@
   --bg-color-main: #43bbc4;
   --bg-color-secondary: #6accc4;
   --font-color1: #d8f3f3;
+  --font-color2: #54b8bf;
   --button-color: #88d0d4;
 }
 
@@ -20,6 +21,7 @@
     --bg-color-main: #43bbc4;
     --bg-color-secondary: #6accc4;
     --font-color1: #d8f3f3;
+    --font-color2: #54b8bf;
     --button-color: #88d0d4;
   }
 }

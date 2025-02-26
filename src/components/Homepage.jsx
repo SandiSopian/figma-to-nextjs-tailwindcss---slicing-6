@@ -1,20 +1,30 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import HeroSpacing from "../components/HeroSpacing";
-import Catalog from "../components/Catalog";
-import More from "../components/More";
+import Navbar from "./Navbar";
+import Hero from "./Hero";
+import HeroSpacing from "./HeroSpacing";
+import Catalog from "./Catalog";
+import More from "./More";
+import Footer from "./Footer";
 
 const Homepage = () => {
   return (
     <>
-      <div className="bg-BgColorMain">
+      <header className="bg-BgColorMain">
         <Navbar />
-        <Hero />
-      </div>
-      <HeroSpacing />
-      <Catalog />
-      <More />
+      </header>
+
+      <main>
+        <div className="bg-BgColorMain">
+          <Hero />
+        </div>
+        <HeroSpacing />
+        <Catalog />
+        <More />
+      </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };

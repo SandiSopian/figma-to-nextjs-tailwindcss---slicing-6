@@ -7,7 +7,7 @@ const More = () => {
 
   return (
     <section className="container mx-auto">
-      <h1 className="text-4xl font-bold text-center text-BgColorSecond mb-8 mt-24">Get to know more closely</h1>
+      <h1 className="text-5xl font-bold text-center text-FontColor2 mb-8 mt-24">Get to know more closely</h1>
 
       <div className="flex flex-col lg:flex-row justify-center gap-8 p-8">
         <div className="bg-BgColorMain text-white flex flex-col justify-end overflow-hidden lg:w-1/3 gap-4">

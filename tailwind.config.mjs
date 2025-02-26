@@ -9,6 +9,7 @@ export default {
         BgColorMain: "var(--bg-color-main)",
         BgColorSecond: "var(--bg-color-secondary)",
         FontColor1: "var(--font-color1)",
+        FontColor2: "var(--font-color2)",
         ButtonColor: "var(--button-color)",
       },
       scale: {

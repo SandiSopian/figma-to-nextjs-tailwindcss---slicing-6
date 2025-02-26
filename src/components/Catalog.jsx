@@ -13,7 +13,7 @@ const Catalog = () => {
 
   return (
     <section className="flex flex-col items-center justify-center p-6 bg-white">
-      <h1 className="text-4xl font-bold text-center text-BgColorSecond mb-8 mt-24">CATALOG</h1>
+      <h1 className="text-7xl font-bold text-center text-FontColor2 mb-8 mt-24">CATALOG</h1>
 
       {/* Desktop View */}
       <div className="container hidden lg:flex gap-2 mx-auto justify-center text-white">
