@@ -1,7 +1,7 @@
+import React from "react";
 import Disclaimer from "@/components/Disclaimer";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import React from "react";
 import "../styles/globals.css";
 
 const disclaimer = () => {
