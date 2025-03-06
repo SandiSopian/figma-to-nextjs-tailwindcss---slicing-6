@@ -28,7 +28,7 @@ export default function ContactPage() {
             <Input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} required className="w-full" />
             <Input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required className="w-full" />
             <Textarea name="message" placeholder="Message" value={formData.message} onChange={handleChange} required className="w-full" />
-            <Button type="submit" className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-xl">
+            <Button type="submit" className="w-full bg-BgColorSecond hover:bg-ButtonColor text-white py-2 rounded-xl">
               Send
             </Button>
           </form>

@@ -52,7 +52,7 @@ const Navbar = () => {
         } md:translate-x-0 md:hidden`}
       >
         <li className="border-b md:border-none py-2 px-4 md:py-0 hover:text-white hover:underline">
-          <Link href="/review" onClick={() => setMenuOpen(false)}>
+          <Link href="https://forum.bardi.co.id/forum/bardi-products-support" onClick={() => setMenuOpen(false)}>
             Reviews
           </Link>
         </li>
