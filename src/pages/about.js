@@ -1,6 +1,6 @@
 import React from "react";
-import AboutPage from "@/components/AboutPage";
 import Navbar from "@/components/Navbar";
+import AboutPage from "@/components/AboutPage";
 import Footer from "@/components/Footer";
 import "../styles/globals.css";
 
