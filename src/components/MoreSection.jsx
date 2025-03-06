@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
-const More = () => {
+const MoreSection = () => {
   const { product1, product2, product3 } = moreSection;
   const products = [product1, product2, product3];
 
@@ -65,4 +65,4 @@ const More = () => {
   );
 };
 
-export default More;
+export default MoreSection;

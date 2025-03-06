@@ -3,10 +3,10 @@ import Navbar from "./Navbar";
 import Hero from "./Hero";
 import HeroSpacing from "./HeroSpacing";
 import Catalog from "./Catalog";
-import More from "./More";
+import MoreSection from "./MoreSection";
 import Footer from "./Footer";
 
-const Homepage = () => {
+const HomePage = () => {
   return (
     <>
       <header className="bg-BgColorMain">
@@ -19,7 +19,7 @@ const Homepage = () => {
         </div>
         <HeroSpacing />
         <Catalog />
-        <More />
+        <MoreSection />
       </main>
 
       <footer>
@@ -29,4 +29,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default HomePage;

@@ -1,6 +1,7 @@
 import React from "react";
 import { heroSection } from "@/service/database";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   const { heroImg } = heroSection;
@@ -18,8 +19,9 @@ const Hero = () => {
           </p>
 
           <div className="flex items-center gap-8">
-            <button className="rounded-md py-3 px-6 bg-ButtonColor hover:text-gray-100">Shop Now ✨</button>
-            <p>Guarantee 1 year</p>
+            <button className="rounded-md py-3 px-6 bg-ButtonColor hover:text-gray-100">
+              <Link href="https://bardi.co.id/shop/">Shop Now ✨</Link>
+            </button>
           </div>
         </div>
 

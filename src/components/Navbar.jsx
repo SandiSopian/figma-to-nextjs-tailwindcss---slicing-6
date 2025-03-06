@@ -18,14 +18,14 @@ const Navbar = () => {
         <h1 className="text-xl font-bold hover:text-white">Bardiner</h1>
       </Link>
 
-      <Link href="https://bardi.co.id/products/" target="_blank" className="flex items-center hover:text-white hover:underline">
+      <Link href="https://bardi.co.id/shop/" className="flex items-center hover:text-white hover:underline">
         <FontAwesomeIcon icon={faCartShopping} className="border-red-400 size-4 mr-2" />
         <span>Shop</span>
       </Link>
 
       <ul className="hidden md:flex justify-center items-center ">
         <li className="py-2 px-4 hover:text-white hover:underline ">
-          <Link href="/review" onClick={() => setMenuOpen(false)}>
+          <Link href="https://forum.bardi.co.id/forum/bardi-products-support" onClick={() => setMenuOpen(false)}>
             Reviews
           </Link>
         </li>

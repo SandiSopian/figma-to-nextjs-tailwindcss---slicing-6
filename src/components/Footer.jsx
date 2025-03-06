@@ -12,9 +12,9 @@ const Footer = () => {
   const { footerImg, footerEmail, footerFb, footerIg, footerWebsite } = footerSection;
   const menuItems = [
     { name: "About Us", link: "/about" },
-    { name: "Products", link: footerWebsite },
-    { name: "Official Website", link: footerWebsite },
     { name: "Disclaimer", link: "/disclaimer" },
+    { name: "Products", link: "https://bardi.co.id/products/" },
+    { name: "Official Website", link: footerWebsite },
   ];
 
   return (

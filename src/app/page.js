@@ -1,5 +1,4 @@
-import Homepage from "@/components/Homepage";
-import Image from "next/image";
+import HomePage from "@/components/HomePage";
 
 export const metadata = {
   title: "Halaman Utama",
@@ -8,5 +7,5 @@ export const metadata = {
 };
 
 export default function Home() {
-  return <Homepage />;
+  return <HomePage />;
 }
